@@ -1,51 +1,78 @@
-html{height: 100%;}
+/* Anasse NAJI */
+*{font-family: sans-serif;}
 body{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  background:  #003366;
-  transition: 0.5s ease-in-out;
-  font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(28, 37, 85);
+    min-height: 100%;
+    box-sizing: content-box;
+   /* transition: background 1s ease-in-out;*/
 }
-.form{
-  position: relative;
-  top: 40px;
-  /*box Setting */
-  margin: 0 auto;
-  padding: 15px;
-  /* Display */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* Borders */
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 35px;
-  border-bottom-right-radius: 15px;
-  border-top-right-radius: 15px;
-  width: 50%;
-  height: 500px;
-  background: #ffffff;
-  /* The Box Shadow */
-  -webkit-box-shadow: 10px 11px 13px -1px rgba(201,193,235,0.68);
-  -moz-box-shadow: 10px 11px 13px -1px rgba(201,193,235,0.68);
-  box-shadow: 10px 11px 13px -1px rgba(201,193,235,0.68);
-  transition: 1s;
+.container{
+    background: rgb(202, 203, 207);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    /*border: 1px solid white;*/
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 10px 20px;
+    width: 50%;
+    height: 400px;
+    box-shadow: 1px 2px 5px gray;
 }
-.form h2{
-  text-align: center;
-  font-size: 35px;
+.container h2 ,p ,img{
+    display: block;
+    text-align: center;
 }
-.form form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  margin: 5px;
+.container img{margin: 0 auto;padding: 15px;}
+.container .form{
+    padding: 12px;
+    margin: 5px auto;
+    /* Display */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    overflow: hidden
 }
-.form form label{
-  margin: 10px 0;
+.container .form input{
+    margin: auto;
+    padding: 10px;
+/*    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;*/
+    width: 400px;
 }
-.form form input[type=submit]{
-  margin: 10px 0;
-  transform: translateY(10px);
+
+.container .form .button{
+    display: inline-block;
+    padding: 20px 10px;
+    margin: auto;
+}
+.container .form .button button{
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.container .form .button #signin{
+    background: rgba(228, 55, 32, 0.829);
+    color: white;
+}
+.container .form .button #signin:hover{
+    background: rgba(228, 55, 32, 0.925);
+    transition: background 0.1s ease-in-out;
+}
+.container .form .button #login{
+    background: rgba(45, 20, 185, 0.753);
+    color: white;
+}
+.container .form .button #login:hover{
+    background: rgba(44, 19, 184, 0.884);
+    transition: background 0.1s ease-in-out;
 }
